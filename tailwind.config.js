@@ -7,22 +7,6 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [
-    function ({ addUtilities }) {
-      const newUtilites = {
-        ".no-scrollbar::-ebkit-scrollbar": {
-          display: "none",
-        },
-        ".no-scrollbar": {
-          "-ms-overflow-style": "none",
-          "scrollbar-width": "none"
-
-        },
-
-      };
-      addUtilities(newUtilites)
-    }
-
-  ],
+  plugins: [require('tailwind-scrollbar-hide')],
 }
 

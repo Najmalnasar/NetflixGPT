@@ -8,10 +8,24 @@ export const API_OPTIONS = {
     method: 'GET',
     headers: {
         accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5Y2U0MGI4ZWNhNTJlMjdjZTVlNTY3YWI4MmU2NmQ4YiIsInN1YiI6IjY1YTEyYzVlYjM0NDA5MDEyNzY3MmE1OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.fgcq6DjxsxUuqE_hbpW-QsHkp89n7j__0YTwCACmEpE'
+        Authorization: "Bearer" + process.env.React_APP_TMDB_KEY
     }
 
 
 };
 
+export const BG_IMG = "https://assets.nflxext.com/ffe/siteui/vlv3/c38a2d52-138e-48a3-ab68-36787ece46b3/6682a693-0607-40fe-8513-56b73731d000/AE-en-20240101-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+
+
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+
+export const LANGUAGES = [
+    { ideentifier: "English", name: "English" },
+    { ideentifier: "Hindi", name: "Hindi" },
+    { ideentifier: "Malayalam", name: "Malayalam" },
+    { ideentifier: "Arabic", name: "Arabic" },
+    { ideentifier: "Spanish", name: "Spanish" }
+
+]
+
+export const OPEN_AI_KEY = process.env.React_APP_TMDB_KEY
