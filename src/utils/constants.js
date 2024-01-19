@@ -29,4 +29,4 @@ export const LANGUAGES = [
 
 ]
 
-export const OPEN_AI_KEY = "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"
+export const OPEN_AI_KEY = "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"

@@ -97,7 +97,7 @@ const Login = () => {
         className="w-full md:w-3/12 absolute p-12 bg-black text-white  my-28 mx-auto right-0 left-0 bg-opacity-80 "
       >
         <h1 className="font-bold text-3xl px-2 py-2">
-          {isSignForm ? "Sing In" : "Sing Up"}
+          {isSignForm ? "Sign In" : "Sign Up"}
         </h1>
         {!isSignForm && (
           <input
