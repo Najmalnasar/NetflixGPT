@@ -54,10 +54,10 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute w-screen px-10 py-2 bg-gradient-to-b  from-black z-40 flex justify-between">
-      <img className="w-44" src={LOG0} alt="logo" />
+    <div className="absolute w-screen px-10 py-2 bg-gradient-to-b  from-black z-40 flex  flex-col md:flex-row justify-between ">
+      <img className="w-44 mx-auto md:mx-0" src={LOG0} alt="logo" />
       {user && (
-        <div className="flex p-2">
+        <div className="flex p-2 justify-between">
           {showGptSearch && (
             <select
               className="mx-2 text-center py-2 px-2 bg-black bg-opacity-50  text-white text-bold rounded-lg border-none"

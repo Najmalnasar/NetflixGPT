@@ -86,11 +86,15 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img src={BG_IMG} alt="logo" />
+        <img
+          className="h-screen w-screen object-cover"
+          src={BG_IMG}
+          alt="logo"
+        />
       </div>
       <form
         onClick={(e) => e.preventDefault()}
-        className="absolute p-12 bg-black text-white w-3/12 my-28 mx-auto right-0 left-0 bg-opacity-80"
+        className="w-full md:w-3/12 absolute p-12 bg-black text-white  my-28 mx-auto right-0 left-0 bg-opacity-80 "
       >
         <h1 className="font-bold text-3xl px-2 py-2">
           {isSignForm ? "Sing In" : "Sing Up"}
